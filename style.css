@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Plus+Jakarta+Sans:wght@400;500;700&family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1d1f28ff;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+}
+
+header {
+    max-width: 900px;
+    width: 100%;
+}
+
+header.navbar-container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+    background-color: #1d1f28ff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+header nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+header .header-hero figure img {
+    width: 700px;
+}
+
+header .header-hero figure figcaption {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+header .header-content p {
+    line-height: 26px;
+}
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 3rem;
+}
+
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+#caraKerja img {
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.card {
+    box-shadow: 0px 2px 10px 0px rgba(0,230,255,1);
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+article .gambar img {
+    border-radius: 10px;
+    width: 50%;
+}
+article p {
+    line-height: 26px;
+}
+
+article a {
+    color: white;
+}
+article a:hover {
+    color: rgba(0,230,255,1);
+}
+
+aside {
+    flex: 1;
+}
+.profile {
+    overflow: auto;
+}
+.profile h3 {
+    text-align: center;
+}
+.profile img {
+    width: 150px;
+    border-radius: 15%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: rgb(29, 161, 175);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav {
+        margin-left: 0;
+    }
+    header .header-hero figure img {
+        width: 100%;
+    }
+    header .header-content {
+        padding-inline: 20px;
+        text-align: center;
+    }
+    hr {
+        width: 50%;
+    }
+    main{
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+    /* hapus efek samping dari float */
+    .profile {
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #myLinks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-title {
+        text-align: center;
+    }
+    .profile img {
+        margin-right: 15px;
+    }
+}
