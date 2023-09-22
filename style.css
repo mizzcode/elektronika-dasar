@@ -176,6 +176,9 @@ footer {
     .header-title {
         text-align: center;
     }
+    header .header-hero figure img {
+        width: 100%;
+    }
     .profile img {
         margin-right: 15px;
     }
