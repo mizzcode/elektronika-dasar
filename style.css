@@ -169,12 +169,29 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
+    header nav {
+        position: sticky;
+        height: 50px;
+    }
+
     #myLinks{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .menu-container {
+        background-color: red;
+    }
+    #menu {
+        position: absolute;
+        display: block;
+        right: 0;
+        margin-right: 40px;
     }
     .header-title {
         text-align: center;
+    }
+    #content img {
+        width: 100%;
     }
     .profile img {
         margin-right: 15px;
