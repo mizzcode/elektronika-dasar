@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (window.innerWidth <= 426) {
             links.style.display = "none";
-            menu.style.display = "block";
             menu.innerHTML = "<i class='fa-solid fa-bars' style='color: #ffffff;'></i>";
             
             menu.addEventListener("click", function() {
