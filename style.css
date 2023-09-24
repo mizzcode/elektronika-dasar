@@ -178,9 +178,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    .menu-container {
-        background-color: red;
-    }
     #menu {
         position: absolute;
         display: block;
