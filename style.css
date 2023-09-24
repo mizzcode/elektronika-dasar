@@ -48,7 +48,13 @@ header nav ul li a {
     color: white;
     font-weight: 500;
 }
-
+header nav ul li a:hover {
+    font-weight: 700;
+    background-color: rgb(29, 161, 175);
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease-in-out 0.4s;
+}
 header .header-hero figure img {
     width: 700px;
 }
@@ -101,13 +107,6 @@ article .gambar img {
 }
 article p {
     line-height: 26px;
-}
-
-article a {
-    color: white;
-}
-article a:hover {
-    color: rgba(0,230,255,1);
 }
 
 aside {
@@ -169,14 +168,12 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
-    header nav {
-        position: sticky;
-        height: 50px;
-    }
-
     #myLinks{
         display: flex;
         flex-direction: column;
+    }
+    header nav ul li a:hover {
+        transition: ease-in-out 0.1s;
     }
     #menu {
         position: absolute;
